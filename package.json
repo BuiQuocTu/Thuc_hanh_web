@@ -1,0 +1,13 @@
+{
+  "name": "thuc_hanh_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
