@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>CoffeePos - Quản Lý Tiệm Cà Phê</title>
+</head>
+<body class="bg-surface text-ink font-body">
+
+  <a href="#main" class="sr-only focus:not-sr-only">Bỏ qua đến nội dung chính</a>
+
+  <!-- Section 1: Header / Navbar -->
+  <header class="border-b border-line bg-surface sticky top-0 z-50">
+    <nav aria-label="Điều hướng chính" class="section flex items-center justify-between py-4">
+      <a href="#" class="font-display text-2xl font-bold text-brand-600">CoffeePos</a>
+      
+      <ul id="menu-list" class="hidden md:flex items-center gap-8 font-medium">
+        <li><a href="#tinh-nang" class="hover:text-brand-600">Tính năng</a></li>
+        <li><a href="#so-lieu" class="hover:text-brand-600">Số liệu</a></li>
+        <li><a href="#bang-gia" class="hover:text-brand-600">Bảng giá</a></li>
+        <li><a href="#faq" class="hover:text-brand-600">Hỏi đáp</a></li>
+      </ul>
+
+      <div class="flex items-center gap-4">
+        <button type="button" class="text-sm font-semibold">Đăng nhập</button>
+        <a href="#cta" class="btn btn-primary hidden sm:inline-flex">Dùng thử miễn phí</a>
+        <button id="menu-btn" type="button" class="md:hidden p-2 text-ink font-bold text-xl" aria-label="Mở menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Section 2: Hero -->
+    <section aria-labelledby="hero-title" class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
+      <div class="flex flex-col items-start gap-6">
+        <h1 id="hero-title" class="font-display text-4xl font-extrabold text-ink lg:text-5xl">
+          Cân xong là có phiếu. Cuối ngày là có số.
+        </h1>
+        <p class="text-lg text-muted">
+          Ghi nhận đơn hàng tại bàn, đối chiếu kho nguyên liệu tự động và xuất báo cáo doanh thu theo thời gian thực.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="#cta" class="btn btn-primary">Cài đặt mất 10 phút, không cần thẻ</a>
+          <button type="button" class="btn border border-line">Xem Demo</button>
+        </div>
+      </div>
+      <div class="rounded-card border border-line bg-white p-2 shadow-sm">
+        <img src="./assets/img/hero-app.png" alt="Giao diện ứng dụng CoffeePos" class="w-full h-auto rounded-card">
+      </div>
+    </section>
+
+    <!-- Section 3: Logo Khách hàng -->
+    <section aria-labelledby="partner-title" class="section border-t border-line py-12">
+      <h2 id="partner-title" class="text-center text-sm font-semibold text-muted mb-6">ĐƯỢC TIN DÙNG BỞI 200+ QUÁN CÀ PHÊ</h2>
+      <ul class="flex justify-center gap-8 text-muted font-bold">
+        <li>Highlands Coffee</li>
+        <li>The Coffee House</li>
+        <li>Phúc Long</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Tính năng -->
+    <section id="tinh-nang" aria-labelledby="tinh-nang-title" class="section">
+      <h2 id="tinh-nang-title" class="text-3xl font-bold font-display text-center mb-8">Tính năng nổi bật</h2>
+      <ul class="grid md:grid-cols-2 gap-6">
+        <li class="p-6 border border-line rounded-card">
+          <h3 class="text-xl font-bold mb-2">Order tại bàn bằng QR</h3>
+          <p class="text-muted">Khách tự quét mã gọi món, đơn hàng tự chuyển xuống bếp.</p>
+        </li>
+        <li class="p-6 border border-line rounded-card">
+          <h3 class="text-xl font-bold mb-2">Trừ kho tự động</h3>
+          <p class="text-muted">Tự động trừ định lượng nguyên liệu ngay khi chốt đơn.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Số liệu -->
+    <section id="so-lieu" aria-labelledby="stats-title" class="section bg-white border-y border-line">
+      <h2 id="stats-title" class="text-3xl font-bold font-display text-center mb-8">Hiệu quả rõ rệt</h2>
+      <ul class="grid grid-cols-2 gap-4 text-center">
+        <li>
+          <p class="text-4xl font-bold text-brand-600">10 phút</p>
+          <p class="text-muted">Thời gian cài đặt ban đầu</p>
+        </li>
+        <li>
+          <p class="text-4xl font-bold text-brand-600">0đ</p>
+          <p class="text-muted">Phí khởi tạo ban đầu</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 6: Cảm nhận -->
+    <section aria-labelledby="review-title" class="section">
+      <h2 id="review-title" class="text-3xl font-bold font-display text-center mb-8">Khách hàng nói gì</h2>
+      <blockquote class="text-center italic max-w-xl mx-auto">
+        "Ghi lô hàng lúc xe vào, đối chiếu công nợ lúc xe ra. Giúp tôi tiết kiệm 2 tiếng mỗi ngày."
+      </blockquote>
+    </section>
+
+    <!-- Section 7: Bảng giá -->
+    <section id="bang-gia" aria-labelledby="pricing-title" class="section">
+      <h2 id="pricing-title" class="text-3xl font-bold font-display text-center mb-8">Gói dịch vụ</h2>
+      <ul class="grid md:grid-cols-2 gap-6">
+        <li class="p-6 border border-line rounded-card text-center">
+          <h3 class="text-xl font-bold">Gói Cơ Bản</h3>
+          <p class="text-2xl font-bold my-4">199.000đ / tháng</p>
+        </li>
+        <li class="p-6 border-2 border-brand-600 rounded-card text-center">
+          <h3 class="text-xl font-bold">Gói Nâng Cao</h3>
+          <p class="text-2xl font-bold my-4">399.000đ / tháng</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 8: FAQ -->
+    <section id="faq" aria-labelledby="faq-title" class="section">
+      <h2 id="faq-title" class="text-3xl font-bold font-display text-center mb-8">Câu hỏi thường gặp</h2>
+      <ul class="space-y-4">
+        <li>
+          <h3 class="font-bold">Có cần mua máy POS đắt tiền không?</h3>
+          <p class="text-muted">Không, bạn có thể dùng ngay trên điện thoại hoặc máy tính bảng sẵn có.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 9: CTA -->
+    <section id="cta" aria-labelledby="cta-title" class="section text-center">
+      <h2 id="cta-title" class="text-3xl font-bold font-display mb-4">Bắt đầu quản lý quán dễ dàng hơn</h2>
+      <a href="#" class="btn btn-primary">Dùng thử 14 ngày miễn phí</a>
+    </section>
+  </main>
+
+  <!-- Section 10: Footer -->
+  <footer class="border-t border-line py-8 text-center text-sm text-muted">
+    <p>&copy; 2026 CoffeePos. Tất cả quyền được bảo lưu.</p>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
