@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Bảng giá - CoffeePos</title>
+  <script>
+    (function(){const s=localStorage.getItem("theme");const d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);})();
+  </script>
+</head>
+<body class="bg-surface text-ink dark:bg-surface-dark dark:text-ink-invert font-sans p-6">
+  <main class="section">
+    <h1 class="text-3xl font-bold mb-4">Bảng giá dịch vụ</h1>
+    <p class="text-sm text-muted lg:hidden mb-2">Vuốt ngang để xem hết bảng.</p>
+    <div class="overflow-x-auto border border-line dark:border-line-invert rounded-xl">
+      <table class="w-full min-w-[720px] text-left border-collapse">
+        <thead>
+          <tr class="border-b border-line dark:border-line-invert bg-slate-50 dark:bg-slate-800">
+            <th class="p-3">Tính năng</th><th class="p-3">Cơ bản</th><th class="p-3">Nâng cao</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="p-3">Quản lý kho</td><td class="p-3">Cơ bản</td><td class="p-3">Tự động</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

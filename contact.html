@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Liên hệ - CoffeePos</title>
+  <script>
+    (function(){const s=localStorage.getItem("theme");const d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);})();
+  </script>
+</head>
+<body class="bg-surface text-ink dark:bg-surface-dark dark:text-ink-invert font-sans p-6">
+  <main class="section max-w-md">
+    <h1 class="text-2xl font-bold mb-4">Form Liên Hệ</h1>
+    <form id="contact-form" novalidate class="space-y-4">
+      <div>
+        <label class="field-label" for="ho-ten">Họ tên <span class="text-red-500">*</span></label>
+        <input class="field-input" id="ho-ten" name="hoTen" type="text" required />
+      </div>
+      <div>
+        <label class="field-label" for="dien-thoai">Số điện thoại <span class="text-red-500">*</span></label>
+        <input class="field-input" id="dien-thoai" name="dienThoai" type="tel" required pattern="0[0-9]{9}" autocomplete="tel" inputmode="numeric" aria-describedby="dien-thoai-hint" />
+        <p class="text-xs text-muted mt-1" id="dien-thoai-hint">Chúng tôi sẽ gọi xác nhận qua số này.</p>
+      </div>
+      <button type="submit" class="btn btn-primary w-full">Gửi ngay</button>
+    </form>
+  </main>
+</body>
+</html>

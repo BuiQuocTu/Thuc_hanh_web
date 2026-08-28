@@ -1,0 +1,5 @@
+[
+  { "id": "PC-01", "trader": "Chú Bảy Rạch Giá", "category": "Xoài", "status": "da-chot", "weight": 1178, "amount": 37696000, "date": "2026-07-26" },
+  { "id": "PC-02", "trader": "Vựa Cô Năm", "category": "Cà phê", "status": "da-chot", "weight": 500, "amount": 25000000, "date": "2026-07-27" },
+  { "id": "PC-03", "trader": "Anh Ba Đạt", "category": "Trà", "status": "tam-hoan", "weight": 300, "amount": 12000000, "date": "2026-07-28" }
+]

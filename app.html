@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Quản lý - CoffeePos</title>
+  <script>
+    (function(){const s=localStorage.getItem("theme");const d=s?s==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d);})();
+  </script>
+</head>
+<body class="bg-surface text-ink dark:bg-surface-dark dark:text-ink-invert font-sans p-6">
+  <main class="section">
+    <h1 class="text-2xl font-bold mb-4">Quản lý đơn hàng</h1>
+    <input type="text" id="search-input" placeholder="Tìm kiếm thương lái..." class="field-input max-w-xs mb-4" />
+    <div class="overflow-x-auto border border-line dark:border-line-invert rounded-xl">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-slate-100 dark:bg-slate-800">
+            <th class="p-3 border-b">Mã đơn</th><th class="p-3 border-b">Thương lái</th><th class="p-3 border-b">Thành tiền</th>
+          </tr>
+        </thead>
+        <tbody id="records-tbody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <template id="row-template">
+    <tr class="border-b border-line dark:border-line-invert">
+      <td class="p-3" data-cell="id"></td>
+      <td class="p-3" data-cell="trader"></td>
+      <td class="p-3" data-cell="amount"></td>
+    </tr>
+  </template>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
